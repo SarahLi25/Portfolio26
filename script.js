@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-/* ===== OPTIONAL: SMOOTH SCROLL ===== */
+/* SMOOTH SCROLL ===== */
 document.querySelectorAll("a[href^='#']").forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
@@ -51,4 +51,14 @@ document.querySelectorAll(".letter").forEach((l,i)=>{
 let speed = (i%2?1:-1)*0.2;
 l.style.transform = `translateY(${window.scrollY*speed}px)`;
 });
+});
+
+/* Contact form submission */
+
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    alert("Message sent!");
+
+    this.reset();
 });

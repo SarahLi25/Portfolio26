@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Sarah Li portfolio - MITES Scholar, student developer, leadership, and software projects.">
+<meta name="description" content="Sarah Li portfolio">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sarah Li | Portfolio</title>
@@ -43,7 +43,7 @@ h2 { letter-spacing: 1px; }
         <img src="assets/name/I.png" class="letter" alt="I">
     </div>
 
-    <p class="tagline">Student Developer • MITES Scholar • NHS President</p>
+    <p class="tagline">Scholar • Leader • Artist</p>
 </section>
 
 <!-- INTRO -->
@@ -52,13 +52,17 @@ h2 { letter-spacing: 1px; }
 
 <div class="split-section">
     <div class="split-img">
-        <img src="assets/me.png" alt="Portrait of Sarah Li">
+        <img src="assets/profile.jpeg" alt="Profile Picture of Sarah Li">
     </div>
 
     <div class="split-right">
-        <h2>Hi, I'm Sarah</h2>
-        <p>I’m a student developer passionate about software development, cybersecurity, and leadership.</p>
-    </div>
+    <h2>Hi, I'm Sarah</h2>
+    <ul>
+        <li>Student exploring STEM, creativity, and impact</li>
+        <li>MITES Scholar</li>
+        <li>Leader in school and community initiatives</li>
+    </ul>
+</div>
 </div>
 </section>
 
@@ -68,14 +72,17 @@ h2 { letter-spacing: 1px; }
 
 <div class="split-section split-reverse">
     <div class="split-img">
-        <img src="assets/about.png" alt="About Sarah">
+        <video src="assets/Academics.mp4" controls alt="Creative and academic work by Sarah Li"></video>
     </div>
 
     <div class="split-left">
-        <h2>About Me</h2>
-        <p>MITES Scholar, NHS President, and aspiring computer scientist building real-world impact.</p>
-        <a href="about.html">Read More →</a>
-    </div>
+    <h2>About Me</h2>
+    <ul>
+        <li>Passionate about building meaningful projects</li>
+        <li>Interested in technology, design, and global perspectives</li>
+    </ul>
+    <a href="about.html">Read More →</a>
+</div>
 </div>
 </section>
 
@@ -85,24 +92,37 @@ h2 { letter-spacing: 1px; }
 
 <div class="split-left">
     <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaborations or opportunities.</p>
+    <p>Feel free to reach out for collaborations, opportunities, or questions.</p>
 
     <div class="social-icons">
-        <img src="assets/github.png" class="social-icon" alt="GitHub">
-        <img src="assets/linkedin.png" class="social-icon" alt="LinkedIn">
+
+        <!-- GitHub -->
+        <a href="https://github.com/SarahLi25" target="_blank" rel="noopener noreferrer">
+            <img src="assets/githubLogo.png" 
+                 class="social-icon" 
+                 alt="Visit Sarah Li's GitHub profile">
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sarah-li-873441270/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/linkedinLogo.png" 
+                 class="social-icon" 
+                 alt="Visit Sarah Li's LinkedIn profile">
+        </a>
+
     </div>
 </div>
 
 <div class="split-right">
 <form class="contact-form">
-<label>Name</label>
-<input type="text" required>
+<label for="name">Name</label>
+<input id="name" type="text" required>
 
-<label>Email</label>
-<input type="email" required>
+<label for="email">Email</label>
+<input id="email" type="email" required>
 
-<label>Message</label>
-<textarea required></textarea>
+<label for="message">Message</label>
+<textarea id="message" required></textarea>
 
 <button type="submit">Send</button>
 </form>
